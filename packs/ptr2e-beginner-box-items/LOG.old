@@ -1,0 +1,7 @@
+2025/02/03-11:51:00.125 8108 Recovering log #4
+2025/02/03-11:51:00.129 8108 Delete type=0 #4
+2025/02/03-11:51:00.129 8108 Delete type=3 #2
+2025/02/03-12:09:44.177 243c Level-0 table #9: started
+2025/02/03-12:09:44.179 243c Level-0 table #9: 1330 bytes OK
+2025/02/03-12:09:44.181 243c Delete type=0 #7
+2025/02/03-12:09:44.197 243c Manual compaction at level-0 from '!items!Zdud0ky645oA7cEe' @ 72057594037927935 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at (end)

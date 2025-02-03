@@ -1,0 +1,84 @@
+{
+  "id": "ptr2e-beginner-box",
+  "title": "PTR2e Beginner Adventure (PMD) - Tropical Trouble",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "ptr2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "<p>A Starter Adventure to help get the hang of using Pokemon Tabletop Reunited: Evolved to run Pokemon Mystery Dungeon Scenarios.</p>",
+  "authors": [
+    {
+      "name": "Fox",
+      "url": "https://startplaying.games/gm/fox-the-gm",
+      "discord": "silverfox3853",
+      "flags": {}
+    },
+    {
+      "name": "Eon",
+      "url": "https://2e.ptr.wiki",
+      "discord": "asheeon",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "ptr2e-beginner-box",
+      "label": "PTR2e Beginner Box",
+      "path": "packs/ptr2e-beginner-box",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "ptr2e",
+      "flags": {}
+    },
+    {
+      "name": "ptr2e-beginner-box-items",
+      "label": "PTR2e Beginner Box Items",
+      "path": "packs/ptr2e-beginner-box-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "ptr2e",
+      "flags": {}
+    },
+    {
+      "name": "ptr2e-beginner-box-actors",
+      "label": "PTR2e Beginner Box Actors",
+      "path": "packs/ptr2e-beginner-box-actors",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "ptr2e",
+      "flags": {}
+    },
+    {
+      "name": "ptr2e-beginner-box-tables",
+      "label": "PTR2e Beginner Box Tables",
+      "path": "packs/ptr2e-beginner-box-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "LIMITED",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "ptr2e",
+      "flags": {}
+    }
+  ]
+}
