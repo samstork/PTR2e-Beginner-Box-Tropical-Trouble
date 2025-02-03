@@ -1,15 +1,8 @@
-2025/02/03-12:09:48.779 80a0 Recovering log #8
-2025/02/03-12:09:48.783 80a0 Delete type=0 #8
-2025/02/03-12:09:48.783 80a0 Delete type=3 #6
-2025/02/03-12:28:44.805 243c Level-0 table #13: started
-2025/02/03-12:28:44.807 243c Level-0 table #13: 9890 bytes OK
-2025/02/03-12:28:44.809 243c Delete type=0 #11
-2025/02/03-12:28:44.817 243c Manual compaction at level-0 from '!folders!3IqOJyn4OxmDYT0s' @ 72057594037927935 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at (end)
-2025/02/03-12:28:44.834 243c Manual compaction at level-1 from '!folders!3IqOJyn4OxmDYT0s' @ 72057594037927935 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at '!items!zxHzLzzJwpxuEcuG' @ 21 : 1
-2025/02/03-12:28:44.834 243c Compacting 1@1 + 1@2 files
-2025/02/03-12:28:44.836 243c Generated table #14@1: 15 keys, 5258 bytes
-2025/02/03-12:28:44.836 243c Compacted 1@1 + 1@2 files => 5258 bytes
-2025/02/03-12:28:44.838 243c compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/02/03-12:28:44.838 243c Delete type=2 #9
-2025/02/03-12:28:44.838 243c Delete type=2 #13
-2025/02/03-12:28:44.853 243c Manual compaction at level-1 from '!items!zxHzLzzJwpxuEcuG' @ 21 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at (end)
+2025/02/03-12:59:16.830 8108 Recovering log #17
+2025/02/03-12:59:16.837 8108 Delete type=0 #17
+2025/02/03-12:59:16.837 8108 Delete type=3 #15
+2025/02/03-12:59:48.422 243c Level-0 table #22: started
+2025/02/03-12:59:48.422 243c Level-0 table #22: 0 bytes OK
+2025/02/03-12:59:48.424 243c Delete type=0 #20
+2025/02/03-12:59:48.428 243c Manual compaction at level-0 from '!folders!3IqOJyn4OxmDYT0s' @ 72057594037927935 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at (end)
+2025/02/03-12:59:48.428 243c Manual compaction at level-1 from '!folders!3IqOJyn4OxmDYT0s' @ 72057594037927935 : 1 .. '!items.effects!Zdud0ky645oA7cEe.poisoncondition0' @ 0 : 0; will stop at (end)
