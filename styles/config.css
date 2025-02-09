@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Kanit";
+  src: url(fonts/kanit.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(fonts/roboto-condensed.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Skranji Regular";
+  src: url(fonts/skranji-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Skranji Bold";
+  src: url(fonts/skranji-bold.ttf) format("truetype");
+}

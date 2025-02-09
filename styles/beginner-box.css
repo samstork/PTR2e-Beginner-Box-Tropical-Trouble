@@ -1,0 +1,1985 @@
+@font-face {
+  font-family: "Kanit";
+  src: url(fonts/kanit.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(fonts/roboto-condensed.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Skranji Regular";
+  src: url(fonts/skranji-regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Skranji Bold";
+  src: url(fonts/skranji-bold.ttf) format("truetype");
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header,
+div.adventure-importer.window-app.ptr-bb .window-content header {
+  margin-top: 12px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header h1,
+div.adventure-importer.window-app.ptr-bb .window-content header h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header h2,
+div.adventure-importer.window-app.ptr-bb .window-content header h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header h3,
+div.adventure-importer.window-app.ptr-bb .window-content header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header h4,
+div.adventure-importer.window-app.ptr-bb .window-content header h4 {
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h1,
+div.adventure-importer.window-app.ptr-bb .window-content h1 {
+  font-family: "Kanit", sans-serif;
+  color: #2a8239;
+  font-size: 1.75rem;
+  border: unset;
+  line-height: 22px;
+  margin: 14px 0 10px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h2,
+div.adventure-importer.window-app.ptr-bb .window-content h2 {
+  font-family: "Skranji Regular", sans-serif;
+  color: #2a8239;
+  font-size: 1.5rem;
+  border: unset;
+  margin: 10px 0 8px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h3,
+div.adventure-importer.window-app.ptr-bb .window-content h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content h4,
+div.adventure-importer.window-app.ptr-bb .window-content h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.25rem;
+  border: unset;
+  margin: 12px 0 0 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h3,
+div.adventure-importer.window-app.ptr-bb .window-content h3 {
+  color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h4,
+div.adventure-importer.window-app.ptr-bb .window-content h4 {
+  color: #509c5c;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content h4.sub,
+div.adventure-importer.window-app.ptr-bb .window-content h4.sub {
+  color: #2a8239;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: right;
+  position: absolute;
+  right: 0.75rem;
+  top: 0rem;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p,
+div.adventure-importer.window-app.ptr-bb .window-content p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content li,
+div.adventure-importer.window-app.ptr-bb .window-content li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul,
+div.adventure-importer.window-app.ptr-bb .window-content ul {
+  list-style-type: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-roll,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-check,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content span[data-visibility]:not([data-visibility=all]),
+div.adventure-importer.window-app.ptr-bb .window-content span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost > i,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link > i {
+  background: none;
+  border: none;
+  line-height: 1rem;
+  outline: none;
+  border-radius: 5px;
+  color: #2a8239;
+  padding: 0 2px 0 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-roll:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-check:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content span[data-visibility]:not([data-visibility=all]):hover,
+div.adventure-importer.window-app.ptr-bb .window-content span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost > i:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i:hover,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link > i:hover {
+  text-shadow: 0 0 10px #509c5c;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost i,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link i,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-roll i,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-roll i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-check i,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-check i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content span[data-visibility]:not([data-visibility=all]) i,
+div.adventure-importer.window-app.ptr-bb .window-content span[data-visibility]:not([data-visibility=all]) i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost > i i,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i i,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link > i i {
+  margin-right: 2px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-roll i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-roll i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .inline-check i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .inline-check i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content span[data-visibility]:not([data-visibility=all]) i::before,
+div.adventure-importer.window-app.ptr-bb .window-content span[data-visibility]:not([data-visibility=all]) i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost > i i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i i::before,
+div.adventure-importer.window-app.ptr-bb .window-content .content-link > i i::before {
+  margin-left: 2px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]),
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i {
+  text-decoration: underline;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i:first-child {
+  display: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d4:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d4:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d6:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d6:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d8:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d8:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d10:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d10:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d12:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d12:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i > i.fa-dice-d20:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i > i.fa-dice-d20:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i > i.fa-dice-d20:first-child {
+  display: initial;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i i:first-child,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i i:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-roll i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-roll i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .inline-check i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .inline-check i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p span[data-visibility]:not([data-visibility=all]) i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p span[data-visibility]:not([data-visibility=all]) i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost > i i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .with-repost > i i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content p .content-link > i i::before,
+div.adventure-importer.window-app.ptr-bb .window-content p .content-link > i i::before {
+  text-decoration: initial;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure,
+div.adventure-importer.window-app.ptr-bb .window-content figure {
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.round img,
+div.adventure-importer.window-app.ptr-bb .window-content figure.round img {
+  border-radius: 50%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.balance img,
+div.adventure-importer.window-app.ptr-bb .window-content figure.balance img {
+  margin: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure figcaption,
+div.adventure-importer.window-app.ptr-bb .window-content figure figcaption {
+  font-size: 1.05rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.head,
+div.adventure-importer.window-app.ptr-bb .window-content figure.head {
+  margin: 1rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.head img,
+div.adventure-importer.window-app.ptr-bb .window-content figure.head img {
+  border-radius: 10px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.right,
+div.adventure-importer.window-app.ptr-bb .window-content figure.right,
+div.journal-sheet.window-app.ptr-bb .journal-page-content figure.left,
+div.adventure-importer.window-app.ptr-bb .window-content figure.left {
+  padding: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content img,
+div.adventure-importer.window-app.ptr-bb .window-content img {
+  border: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content img.flip,
+div.adventure-importer.window-app.ptr-bb .window-content img.flip {
+  transform: scaleX(-1);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content img.scale150,
+div.adventure-importer.window-app.ptr-bb .window-content img.scale150 {
+  min-width: 150%;
+  margin: -25%;
+  clip-path: circle(55%);
+  -webkit-mask-image: radial-gradient(black 55%, transparent 67.5%);
+  mask-image: radial-gradient(black 55%, transparent 67.5%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content img.scale200,
+div.adventure-importer.window-app.ptr-bb .window-content img.scale200 {
+  min-width: 200%;
+  margin: -50%;
+  clip-path: circle(40%);
+  -webkit-mask-image: radial-gradient(black 40%, transparent 50%);
+  mask-image: radial-gradient(black 40%, transparent 50%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #b93733;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header .content-link > i {
+  color: #b14343;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside {
+  background: #b14343;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i::after {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3 {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3 a.content-link i {
+  display: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p {
+  margin: 0.2rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p i.fas {
+  float: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside ul {
+  margin: auto;
+  padding: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside ul li {
+  margin: 4px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside img {
+  max-width: 150px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.wide img {
+  max-width: 200px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.thin img {
+  max-width: 128px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.clip {
+  clip-path: circle(35%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter ul.outcomes strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link > i {
+  color: #b14343;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter ul.outcomes strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter ul.outcomes strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link > i::after {
+  color: #b14343;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter .content-link > i:hover {
+  text-shadow: 0 0 10px #b14343;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter hr {
+  border-bottom: 1px #b93733 solid;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter > p:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter > article:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(130, 80, 80, 0.1) 5%, rgba(130, 80, 80, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #b93733;
+  border-bottom: 1px solid #b93733;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter > p:only-child {
+  padding: 0.5rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter > article,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(130, 80, 80, 0.1) 5%, rgba(130, 80, 80, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #b93733;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header + ul.traits {
+  margin-top: 0.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter header {
+  text-transform: uppercase;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #b93733;
+  text-transform: uppercase;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter .content-link > i {
+  color: #b14343;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.encounter h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside {
+  background: #b14343;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h4::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter p::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h4::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h4::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter p::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside p::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i::after {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter .content-link > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3 {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter h3 a.content-link i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside h3 a.content-link i {
+  display: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter > p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p {
+  margin: 0.2rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter > p i.fas,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p i.fas {
+  float: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter > p i.fas.fa-comment-alt,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter ul,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside ul {
+  margin: auto;
+  padding: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter ul li,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside ul li {
+  margin: 4px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter img,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside img {
+  max-width: 150px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.wide img,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.wide img {
+  max-width: 200px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.thin img,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.thin img {
+  max-width: 128px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.token,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.token.wide,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.token.thin,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.porthole,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content aside.encounter.clip,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.encounter aside.clip {
+  clip-path: circle(35%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #655fa7;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header .content-link > i {
+  color: #48438b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside {
+  background: #48438b;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h4::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside p::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h4::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside p::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link > i::after {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h3 {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside h3 a.content-link i {
+  display: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside > p {
+  margin: 0.2rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside > p i.fas {
+  float: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside ul {
+  margin: auto;
+  padding: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside ul li {
+  margin: 4px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside img {
+  max-width: 150px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.wide img {
+  max-width: 200px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.thin img {
+  max-width: 128px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside.clip {
+  clip-path: circle(35%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure ul.outcomes strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link > i {
+  color: #48438b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure ul.outcomes strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure ul.outcomes strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link > i::after {
+  color: #48438b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure .content-link > i:hover {
+  text-shadow: 0 0 10px #48438b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure hr {
+  border-bottom: 1px #655fa7 solid;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure > p:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure > article:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 60, 140, 0.1) 5%, rgba(60, 60, 140, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #655fa7;
+  border-bottom: 1px solid #655fa7;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure > p:only-child {
+  padding: 0.5rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure > article,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 60, 140, 0.1) 5%, rgba(60, 60, 140, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #655fa7;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure header + ul.traits {
+  margin-top: 0.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.treasure aside {
+  border-top: 1.2rem solid white;
+  margin-top: 3px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #4F4F4F;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header .content-link > i {
+  color: #b5442a;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside {
+  background: white;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h4::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside p::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h4::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside p::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link > i::after {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h3 {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside h3 a.content-link i {
+  display: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside > p {
+  margin: 0.2rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside > p i.fas {
+  float: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside ul {
+  margin: auto;
+  padding: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside ul li {
+  margin: 4px 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside img {
+  max-width: 150px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.wide img {
+  max-width: 200px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.thin img {
+  max-width: 128px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone aside.clip {
+  clip-path: circle(35%);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone ul.outcomes strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link > i {
+  color: #b5442a;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone ul.outcomes strong::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h1::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h2::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h3::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-roll::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-check::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all])::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link > i::before,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone ul.outcomes strong::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h1::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h2::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone h3::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-roll::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-check::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all])::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost > i::after,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link > i::after {
+  color: #b5442a;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-roll:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .inline-check:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all]):hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .with-repost > i:hover,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone .content-link > i:hover {
+  text-shadow: 0 0 10px white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone hr {
+  border-bottom: 1px #4F4F4F solid;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone > p:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone > article:only-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(160, 99, 50, 0.1) 5%, rgba(160, 99, 50, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #4F4F4F;
+  border-bottom: 1px solid #4F4F4F;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone > p:only-child {
+  padding: 0.5rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone > article,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(160, 99, 50, 0.1) 5%, rgba(160, 99, 50, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #4F4F4F;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone header + ul.traits {
+  margin-top: 0.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.milestone.head > p {
+  border-top: 0.75rem solid white;
+  border-bottom: 0.75rem solid white;
+  padding: 0.75rem;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+div.journal-sheet.ptr-bb.window-app {
+  border-radius: 20px;
+  background: var(--appv2-background);
+}
+div.journal-sheet.ptr-bb.window-app .window-header {
+  --button-size: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 0 0 var(--header-height);
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  gap: 0.25rem;
+  z-index: 1;
+  cursor: grab;
+  background: var(--color-header-background);
+  font-size: var(--font-size-13);
+  color: var(--color-light-1);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 20px 20px 0 0;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry {
+  min-width: 60rem;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry .journal-header {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  z-index: 2;
+  align-content: center;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry .journal-header input.title {
+  height: auto;
+  width: 480px;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  color: #2a8239;
+  text-overflow: ellipsis;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .editable header {
+  margin: unset;
+  padding: 1rem;
+  background: #e0d5be;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .editable .journal-page-content.editor-content figure.head img {
+  max-width: 700px;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .editable .journal-page-content.editor-content figure img {
+  max-width: 300px;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .editable .journal-page-content.editor-content aside img {
+  max-width: 128px;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content {
+  min-width: 44rem;
+  border: unset;
+  z-index: 0;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-entry-pages,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-entry-pages {
+  margin: 0;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page div.editable,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content div.editable {
+  margin: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page div.editable div.scrollable,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content div.editable div.scrollable {
+  padding-top: 0.5rem;
+  scrollbar-gutter: stable both-edges;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page div.editable div.scrollable div.edit-container,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content div.editable div.scrollable div.edit-container {
+  z-index: 5;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-header,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-header {
+  z-index: 1;
+  border-bottom: 2px solid var(--border-theme-color);
+  border-radius: 8px 0 8px 8px;
+  background: #d9c4a7;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-header input,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-header input {
+  font-family: "Kanit", sans-serif;
+  color: #2a8239;
+  text-overflow: ellipsis;
+  border: none;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-header aside div.heading-level,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-header aside div.heading-level {
+  font-family: "Skranji Regular", sans-serif;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-header aside div.show-title,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-header aside div.show-title {
+  font-family: "Roboto Condensed", sans-serif;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header {
+  position: relative;
+  margin: auto;
+  border: 1px solid var(--border-theme-color);
+  border-radius: 20px;
+  background: #e0d5be;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h1,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h1,
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h2,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h2,
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h3,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h3 {
+  width: 100%;
+  margin: unset;
+  clear: both;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h1,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h1 {
+  color: #2a8239;
+  text-align: center;
+  border: unset;
+  margin: 0.5rem 0 0.5rem 0;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  font-family: "Skranji Bold", sans-serif;
+  letter-spacing: 0.075rem;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h2,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h2,
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h3,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h3 {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  width: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  color: #2a8239;
+  border-bottom: 2px solid #2a8239;
+  border: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page .journal-page-header h3,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content .journal-page-header h3 {
+  color: #509c5c;
+  font-family: "Kanit", sans-serif;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry-page form,
+div.journal-sheet.ptr-bb.window-app section.journal-entry-content {
+  background: #ede3c8;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  color: var(--appv2-text-color);
+  border: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header {
+  z-index: 2;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.next,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.next,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.previous,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.previous,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons a.action-button,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header a.action-button,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons input,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header input,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar div.action-buttons button.create,
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar header.directory-header button.create {
+  margin: 0.25rem;
+  border: unset;
+  background: rgba(255, 255, 245, 0.75);
+  border-radius: 4px;
+  line-height: 28px;
+  height: 28px;
+  color: black;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item {
+  line-height: 30px;
+  border: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item span.page-title {
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item span.page-ownership {
+  width: 24px;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item span.page-ownership.observer {
+  color: #939393;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item span.page-ownership.none {
+  color: #7070CC;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item ol.headings {
+  display: none;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level1 span.page-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level2 span.page-title {
+  text-indent: 0rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar ol.directory-list li.directory-item.level3 span.page-title {
+  text-indent: 0.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) {
+  flex-basis: 16rem;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) span.page-number {
+  color: transparent;
+  width: 24px;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar:not(.collapsed) .active + .active span.page-number {
+  background-image: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry aside.sidebar.flexcol.directory.journal-sidebar.collapsed {
+  padding: 0;
+  flex-basis: 2.5rem;
+}
+div.journal-sheet.ptr-bb.window-app .directory .directory-item:is(.context, .active)::after {
+  border-color: #509c5c;
+}
+div.journal-sheet.ptr-bb.window-app:not(.minimized) header.window-header {
+  border: unset;
+}
+div.journal-sheet.ptr-bb.window-app.journal-entry section.window-content {
+  border: unset;
+  border-radius: unset;
+  position: relative;
+}
+div.adventure-importer.ptr-bb.window-app {
+  border-radius: 20px;
+  background: var(--appv2-background);
+}
+div.adventure-importer.ptr-bb.window-app .window-header {
+  --button-size: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 0 0 var(--header-height);
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  gap: 0.25rem;
+  z-index: 1;
+  cursor: grab;
+  background: var(--color-header-background);
+  font-size: var(--font-size-13);
+  color: var(--color-light-1);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 20px 20px 0 0;
+}
+div.adventure-importer.ptr-bb.window-app .window-content {
+  padding: 0;
+  background: #ede3c8;
+}
+div.adventure-importer.ptr-bb.window-app .window-content form header {
+  margin-top: unset;
+}
+div.adventure-importer.ptr-bb.window-app .window-content form figure.adventure-banner {
+  position: relative;
+}
+div.adventure-importer.ptr-bb.window-app .window-content form figure.adventure-banner figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  top: 50%;
+  transform: translateY(-75%);
+  margin-top: unset;
+  font-size: 2rem;
+  color: #509c5c;
+  font-family: "Skranji Bold", sans-serif;
+  background: url(/ui/denim075.png) repeat;
+  border-radius: 20px;
+}
+div.adventure-importer.ptr-bb.window-app .window-content form section.adventure-overview,
+div.adventure-importer.ptr-bb.window-app .window-content form section.adventure-contents {
+  padding: 1rem;
+  padding-top: unset;
+}
+div.adventure-importer.ptr-bb.window-app .window-content form footer.adventure-footer {
+  display: flex;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table {
+  border-top: unset;
+  border-bottom: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table td + td {
+  border-left: 1px solid black;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table tr {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table tr td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table tr th {
+  min-width: 3rem;
+  padding: 0.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table thead {
+  border-top: unset;
+  border-bottom: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table thead th {
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #2a8239;
+  color: white;
+  text-align: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table thead th a {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table thead th a i {
+  color: white;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table tbody:nth-child(even) {
+  background-color: #e0d5be;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table tbody:nth-child(odd) {
+  background-color: #d9c4a7;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center1 tr :nth-child(1) {
+  text-align: center;
+  white-space: nowrap;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center1 tr :nth-child(1) td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center1 tr :nth-child(1) th {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center2 tr :nth-child(2) {
+  text-align: center;
+  white-space: nowrap;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center2 tr :nth-child(2) td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center2 tr :nth-child(2) th {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center3 tr :nth-child(3) {
+  text-align: center;
+  white-space: nowrap;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center3 tr :nth-child(3) td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center3 tr :nth-child(3) th {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center4 tr :nth-child(4) {
+  white-space: nowrap;
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center4 tr :nth-child(4) td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center4 tr :nth-child(4) th {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center5 tr :nth-child(5) {
+  white-space: nowrap;
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center5 tr :nth-child(5) td,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.center5 tr :nth-child(5) th {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.mid {
+  width: 80%;
+  margin: auto;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.thin {
+  table-layout: fixed;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.thin th,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.thin td {
+  width: 100px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content table.static tr > :first-child {
+  width: 170px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside {
+  background-color: #d9c4a7;
+  border-radius: 8px;
+  padding: 0.1rem 0.7rem;
+  margin: 1rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside h3 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  color: #2a8239;
+  margin: 0.25rem 0 -0.25rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside.left p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside.left p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside.right p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside.right p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside.left li,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside.left li,
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside.right li,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside.right li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside ul,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside ul {
+  padding: unset;
+  margin: 0.25rem 0;
+  line-height: 1.2rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > aside hr,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > aside hr {
+  border: unset;
+  height: 100%;
+  width: 100%;
+  min-height: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .left {
+  float: left;
+  margin: 0 0.75rem 0 0;
+  clear: left;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .right {
+  float: right;
+  margin: 0 0 0 0.75rem;
+  clear: right;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .left,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .right {
+  max-width: 350px;
+  padding: 0.5rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .left > h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .right > h3 {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 0 -8px 0;
+  font-size: 1rem;
+  color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt {
+  padding: 0 0.5rem;
+  background-color: #ffffff50;
+  border: 1px #d37d4b solid;
+  border-radius: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.thin {
+  max-width: 250px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt header {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 1.5rem;
+  border-bottom: 1px solid #d37d4b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt header p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt header > p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt .content-link > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt h4 {
+  color: #d37d4b;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green {
+  border-color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green header {
+  border-color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green header > p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .with-repost,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .content-link,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .inline-roll,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .inline-check,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green span[data-visibility]:not([data-visibility=all]),
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .with-repost > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green .content-link > i,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.fvtt.green h4 {
+  color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.description {
+  margin: 0.6rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.description p {
+  margin: 8px 0;
+  overflow: auto;
+  color: #9d4433;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.description p:not(:first-child) {
+  text-indent: 1.2rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.description p:first-child {
+  border-top: 1px solid #9d4433;
+  padding-top: 8px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.description p:last-child {
+  border-bottom: 1px solid #9d4433;
+  padding-bottom: 7px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.dialogue {
+  text-indent: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.dialogue :not(strong) {
+  color: #424242;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list dt {
+  float: left;
+  height: 2rem;
+  z-index: 1;
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list dd {
+  overflow: auto;
+  height: 2rem;
+  z-index: 0;
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list dd p {
+  text-align: right;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list p {
+  margin: 6px 0.5rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list > :nth-child(4n-2),
+div.journal-sheet.window-app.ptr-bb .journal-page-content dl.list > :nth-child(4n-3) {
+  background: #d2c3aa85;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content p.bio {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight .flexfill {
+  flex: 1 1 100%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight .flex50 {
+  flex: 1 0 50%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight .flex40 {
+  flex: 1 0 40%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight .flex30 {
+  flex: 1 0 30%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight table.thin {
+  flex: 0 0 180px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight > p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight article,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight table {
+  flex: 1 1 60%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight aside,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight figure {
+  flex: 1 1 40%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight figure.round img {
+  border-radius: 25%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight.half > * {
+  flex: 1 1 50%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.spotlight.baseline {
+  place-items: baseline;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block {
+  box-shadow: 0px 0px 8px 1px #2772343b inset;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block img {
+  filter: drop-shadow(0px 0px 4px 0px #2a8239);
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block header {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #509c5c;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block h3 h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block header h3 {
+  border: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block header {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block p:first-child,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block h3:first-child {
+  margin-top: 0rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block p:last-child {
+  margin-bottom: 0rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block:first-child {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.block:last-child {
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content article.blockgroup.icons figure {
+  flex: 0 0 128px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content article.blockgroup.icons figure img {
+  border-radius: 5%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content article.blockgroup.iconsarray header {
+  align-items: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content article.blockgroup.iconsarray header figure {
+  display: flex;
+  gap: 0.25rem;
+  width: 40px;
+  justify-content: flex-end;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content article.blockgroup.iconsarray header figure img {
+  border-radius: 30%;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .center {
+  text-align: center;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul > p,
+div.journal-sheet.window-app.ptr-bb .journal-page-content table p {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.outcomes strong,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.event strong {
+  color: #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.outcomes hr,
+div.journal-sheet.window-app.ptr-bb .journal-page-content section.event hr {
+  border-color: #509c5c;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.outcomes {
+  padding: 0 0.5rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.outcomes p {
+  margin: 0.25rem 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.outcomes li {
+  padding: 0 0 0 0.25rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.traits {
+  list-style-type: none;
+  display: flex;
+  gap: 0.2rem;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.traits li {
+  border-left: 3px solid #d8c483;
+  border-right: 3px solid #d8c483;
+  background: #509c5c;
+  color: white;
+  padding: 2px 6px 1px 6px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  max-height: 24px;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.traits li.rarity {
+  background: #662288;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.traits li.alignment {
+  background: #446699;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content ul.traits li.size {
+  background: #004416;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > ul.traits:first-child {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  text-align: right;
+  margin: unset;
+  text-transform: uppercase;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content > .subtitle:first-child {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  text-align: right;
+  margin: unset;
+  text-transform: uppercase;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split p {
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .split ul {
+  margin: auto 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content hr {
+  border-top: none;
+  border-bottom: 1px #509c5c solid;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .underlined {
+  border-bottom: 1px solid #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header {
+  margin-bottom: 0.5rem;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined {
+  border-bottom: 2px solid #2a8239;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined h1,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined h2,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined h3,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined h4,
+div.journal-sheet.window-app.ptr-bb .journal-page-content header.underlined p {
+  margin: 0;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .clear {
+  clear: both;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content hr.clear {
+  border: none;
+  margin: unset;
+}
+div.journal-sheet.window-app.ptr-bb .journal-page-content .noclear {
+  clear: none;
+  overflow: auto;
+}

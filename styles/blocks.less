@@ -1,0 +1,623 @@
+@{journalcontent} {
+
+  //  =================  //
+  //        TABLES       //
+  //  =================  //
+
+  // Tables
+  table {
+    border-top: unset;
+    border-bottom: unset;
+
+    td+td {
+      border-left: 1px solid black;
+    }
+
+    tr {
+      line-height: 1.5rem;
+      font-size: 1rem;
+
+      td,
+      th {
+        min-width: 3rem;
+        padding: 0.25rem;
+      }
+    }
+
+    // Header
+    thead {
+      border-top: unset;
+      border-bottom: unset;
+
+      th {
+        font-size: 1rem;
+        font-family: @h3-font-family;
+        background-color: @bb-darkgreen;
+        color: white;
+        text-align: left;
+
+        a {
+          color: white;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    // Body
+    tbody {
+
+      // Colour rows
+      &:nth-child(even) {
+        background-color: @bb-darkbeige;
+      }
+
+      &:nth-child(odd) {
+        background-color: @bb-brown;
+      }
+
+      // td {
+      //   font-family: "Good OT";
+      // }
+    }
+
+    // Style cols
+    &.center1 tr :nth-child(1) {
+      text-align: center;
+      white-space: nowrap;
+
+      td,
+      th {
+        text-align: center;
+      }
+    }
+
+    &.center2 tr :nth-child(2) {
+      text-align: center;
+      white-space: nowrap;
+
+      td,
+      th {
+        text-align: center;
+      }
+    }
+
+    &.center3 tr :nth-child(3) {
+      text-align: center;
+      white-space: nowrap;
+
+      td,
+      th {
+        text-align: center;
+      }
+    }
+
+    &.center4 tr :nth-child(4) {
+      white-space: nowrap;
+      text-align: center;
+
+      td,
+      th {
+        text-align: center;
+      }
+    }
+
+    &.center5 tr :nth-child(5) {
+      white-space: nowrap;
+      text-align: center;
+
+      td,
+      th {
+        text-align: center;
+      }
+    }
+
+    // Other table styles
+    &.mid {
+      width: 80%;
+      margin: auto;
+    }
+
+    &.thin {
+      table-layout: fixed;
+
+      th,
+      td {
+        width: 100px;
+      }
+    }
+
+    &.static {
+      tr>:first-child {
+        width: 170px;
+      }
+    }
+  }
+
+  //  =================  //
+  //  Asides and Floats  //
+  //  =================  //
+
+  // Top-level asides- those inside a box should be getting styled by that box's class.
+  &>aside,
+  section.spotlight>aside {
+    // border-top: 0.5rem solid white;
+    // border-bottom: 0.5rem solid white;
+    // border-image: url(assets/border-aside.webp) 94% 0/1rem 0/0 repeat;
+    background-color: @bb-brown;
+    border-radius: 8px;
+    padding: 0.1rem 0.7rem;
+    margin: 1rem 0; // Sets the default margin (only used if the aside isn't floated)
+
+    h3 {
+      text-align: center;
+      font-family: @h3-font-family;
+      font-size: 1.1rem;
+      color: @bb-darkgreen;
+      margin: 0.25rem 0 -0.25rem 0;
+    }
+
+    &.left,
+    &.right {
+
+      p,
+      li {
+        // font-family: "Good OT Cond";
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+      }
+    }
+
+    ul {
+      padding: unset;
+      margin: 0.25rem 0;
+      line-height: 1.2rem;
+    }
+
+    hr {
+      // background: repeat-x center / auto 12px url(assets/border-hr.webp);
+      border: unset;
+      height: 100%;
+      width: 100%;
+      min-height: 8px;
+    }
+  }
+
+  // Governs all uses of the floats, used on the general asides, quest sections, or as banners in other boxes
+  .left {
+    float: left;
+    margin: 0 0.75rem 0 0;
+    clear: left;
+  }
+
+  .right {
+    float: right;
+    margin: 0 0 0 0.75rem;
+    clear: right;
+  }
+
+  .left,
+  .right {
+    max-width: 350px;
+    padding: 0.5rem;
+  }
+
+  .left,
+  .right {
+    >h3 {
+      text-align: center;
+      font-family: @h3-font-family;
+      margin: 0 0 -8px 0;
+      font-size: 1rem;
+      color: @bb-darkgreen;
+    }
+  }
+
+  // ================== //
+  //    Special Text    //
+  // ================== //
+
+  section.fvtt {
+    padding: 0 0.5rem;
+    background-color: #ffffff50;
+    border: 1px @fvtt-orange solid;
+    border-radius: 8px;
+
+    &.thin {
+      max-width: 250px;
+    }
+
+    header {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 1.5rem;
+      border-bottom: 1px solid @fvtt-orange;
+
+      p:first-child {
+        font-weight: bold;
+        font-size: 1.1rem;
+      }
+    }
+
+    header>p,
+    strong,
+    @{documentlinks},
+    h4 {
+      color: @fvtt-orange;
+    }
+
+    &.green {
+      border-color: @bb-darkgreen;
+
+      header {
+        border-color: @bb-darkgreen;
+      }
+
+      header>p,
+      strong,
+      @{documentlinks},
+      h4 {
+        color: @bb-darkgreen;
+      }
+    }
+  }
+
+  // Readalout/Narrative/Descriptive text
+  section.description {
+    margin: 0.6rem 0;
+
+    p {
+      margin: 8px 0;
+      overflow: auto;
+      color: @bb-red;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+
+      &:not(:first-child) {
+        text-indent: 1.2rem;
+      }
+    }
+
+    p:first-child {
+      border-top: 1px solid @bb-red;
+      padding-top: 8px;
+    }
+
+    p:last-child {
+      border-bottom: 1px solid @bb-red;
+      padding-bottom: 7px;
+    }
+  }
+
+  // Back and forth or lists of questions and answers
+  section.dialogue {
+    text-indent: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    :not(strong) {
+      color: #424242;
+    }
+  }
+
+  dl.list {
+    dt {
+      float: left;
+      height: 2rem;
+      z-index: 1;
+      margin: 0;
+    }
+
+    dd {
+      overflow: auto;
+      height: 2rem;
+      z-index: 0;
+      margin: 0;
+
+      p {
+        text-align: right;
+      }
+    }
+
+    p {
+      margin: 6px 0.5rem;
+    }
+
+    &>:nth-child(4n-2),
+    &>:nth-child(4n-3) {
+      background: #d2c3aa85;
+    }
+  }
+
+  // Used for character biographies
+  p.bio {
+    font-family: @h3-font-family;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: @bb-darkgreen;
+  }
+
+  // Used to split columns, usually for a picture and text
+  section.spotlight {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.75rem;
+
+    //Manual sizing
+    .flexfill {
+      flex: 1 1 100%
+    }
+
+    .flex50 {
+      flex: 1 0 50%
+    }
+
+    .flex40 {
+      flex: 1 0 40%
+    }
+
+    .flex30 {
+      flex: 1 0 30%
+    }
+
+    table.thin {
+      flex: 0 0 180px;
+    }
+
+    //Default sizes
+    >p,
+    article,
+    table {
+      flex: 1 1 60%;
+    }
+
+    aside,
+    figure {
+      flex: 1 1 40%;
+    }
+
+    figure {
+      &.round img {
+        border-radius: 25%;
+      }
+    }
+
+    &.half>* {
+      flex: 1 1 50%;
+    }
+
+    //Example use would be for columns
+    &.baseline {
+      place-items: baseline;
+    }
+  }
+
+  section.block {
+    // Used for the lists of features in the rules journals but I could also use it for research?
+    box-shadow: 0px 0px 8px 1px #2772343b inset; // Colour could be used for a variable
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+
+    img {
+      filter: drop-shadow(0px 0px 4px 0px @bb-darkgreen);
+    }
+
+    h3,
+    header {
+      padding-bottom: 4px;
+      border-bottom: 1px solid @bb-lightgreen;
+
+      h3 {
+        border: unset;
+      }
+    }
+
+    header {
+      margin: 0;
+    }
+
+    p:first-child,
+    h3:first-child {
+      margin-top: 0rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+
+  section.block:first-child {
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+
+  section.block:last-child {
+    border-radius: 0 0 1.25rem 1.25rem;
+  }
+
+  article.blockgroup {
+
+    // Groups several sections together into one "block"!
+    &.icons figure {
+      flex: 0 0 128px;
+
+      img {
+        border-radius: 5%;
+      }
+    }
+
+    &.iconsarray header {
+      align-items: center;
+
+      figure {
+        display: flex;
+        gap: 0.25rem;
+        width: 40px;
+        justify-content: flex-end;
+
+        img {
+          border-radius: 30%;
+        }
+      }
+    }
+  }
+
+  .center {
+    // Example of use is the "maths" sections in the kingdom rules
+    text-align: center;
+  }
+
+  ul>p,
+  table p {
+    margin: 0;
+  }
+
+  ul.outcomes,
+  section.event {
+    strong {
+      color: @bb-darkgreen;
+    }
+
+    hr {
+      border-color: @bb-lightgreen;
+    }
+  }
+
+  ul.outcomes {
+    padding: 0 0.5rem;
+
+    p {
+      margin: 0.25rem 0;
+    }
+
+    li {
+      padding: 0 0 0 0.25rem;
+    }
+  }
+
+  // Creates the "traits" styling
+  ul.traits {
+    list-style-type: none;
+    display: flex;
+    gap: 0.2rem;
+    margin: unset;
+
+    li {
+      border-left: 3px solid @trait-border;
+      border-right: 3px solid @trait-border;
+      background: @bb-lightgreen;
+      color: white;
+      padding: 2px 6px 1px 6px;
+      text-transform: uppercase;
+      font-family: @h3-font-family;
+      font-weight: @h3-font-weight;
+      max-height: 24px;
+
+      &.rarity {
+        background: @trait-rarity;
+      }
+
+      &.alignment {
+        background: @trait-alignment;
+      }
+
+      &.size {
+        background: @trait-size;
+      }
+    }
+  }
+
+  // Moves them around when they're the first one on the page (these should be combined if they're not different)
+  &>ul.traits:first-child {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    text-align: right;
+    margin: unset;
+    text-transform: uppercase;
+  }
+
+  &>.subtitle:first-child {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    text-align: right;
+    margin: unset;
+    text-transform: uppercase;
+  }
+
+  // ================== //
+  //      Misc Bits     //
+  // ================== //
+
+  // Separates contained blocks on opposite sides of the same row, useful for headers
+  .split {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin: unset;
+    }
+
+    ul {
+      margin: auto 0;
+    }
+  }
+
+  hr {
+    border-top: none;
+    border-bottom: 1px @bb-lightgreen solid;
+  }
+
+  .underlined {
+    border-bottom: 1px solid @bb-darkgreen;
+  }
+
+  header {
+    margin-bottom: 0.5rem;
+
+    // Applies the lower border (used in conjunction with above to emulate Paizo style borders)
+    &.underlined {
+      border-bottom: 2px solid @bb-darkgreen;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  // Makes an element clear floats
+  .clear {
+    clear: both;
+  }
+
+  hr.clear {
+    border: none;
+    margin: unset;
+  }
+
+  // Makes an element not clear floats
+  .noclear {
+    clear: none;
+    overflow: auto;
+  }
+
+}

@@ -30,6 +30,12 @@
       }
     ]
   },
+  "esmodules": [
+    "scripts/beginner-box.mjs"
+  ],
+  "styles": [
+    "styles/beginner-box.css"
+  ],
   "description": "<p>A Starter Adventure to help get the hang of using Pokemon Tabletop Reunited: Evolved to run Pokemon Mystery Dungeon Scenarios.</p>",
   "authors": [
     {
@@ -91,6 +97,12 @@
       }
     }
   ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["css"],
+      "paths": ["css", "styles"]
+    }
+  },
   "url": "https://2e.ptr.wiki/adventures/tropical-trouble",
   "manifest": "https://github.com/pokemon-tabletop-reunited/PTR2e-Beginner-Box-Tropical-Trouble/releases/latest/download/module.json",
   "download": "https://github.com/pokemon-tabletop-reunited/PTR2e-Beginner-Box-Tropical-Trouble/releases/latest/download/module.zip"

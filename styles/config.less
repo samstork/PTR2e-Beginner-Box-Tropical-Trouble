@@ -1,0 +1,90 @@
+// SHORTCUTS
+@module-class: ~".ptr-bb";
+@documentlinks: ~".with-repost, .content-link, .inline-roll, .inline-check, span[data-visibility]:not([data-visibility=all]), .with-repost>i, .content-link>i";
+@journalcontent: ~"div.journal-sheet.window-app@{module-class} .journal-page-content";
+@adventureimporter: ~"div.adventure-importer.window-app@{module-class} .window-content";
+@blocktypes: ~".encounter, &.treasure, &.milestone";
+
+// CONFIG
+@header-color-1: @bb-darkgreen;
+@header-color-2: @bb-lightgreen;
+// Text Values Config
+// Regular text
+@p-color: black;
+@p-font-size: 1.05rem;
+@p-font-family: "Roboto Condensed", sans-serif;
+@p-line-height: 1.25rem;
+// Big headers
+@h1-font-size: 1.75rem;
+@h1-font-family: "Kanit", sans-serif;
+// Medium headers
+@h2-font-size: 1.5rem;
+@h2-font-family: "Skranji Regular", sans-serif;
+// Small headers
+@h3-color: @bb-darkgreen;
+@h3-font-size: 1.25rem;
+@h3-font-family: "Roboto Condensed", sans-serif;
+@h3-font-weight: 700;
+@h3-page-font-family: "Kanit", sans-serif;
+// Bold Big headers
+@h1-bold-font-family: "Skranji Bold", sans-serif;
+// Links
+@inline-link-button: @bb-darkgreen;
+@inline-link-button-highlight: @bb-lightgreen;
+
+// COLOURS
+@fvtt-orange: #d37d4b;
+// Beginner box palette
+@bb-darkgreen: #2a8239; //headers
+@bb-lightgreen: #509c5c; //subheaders, traits
+@bb-red: #9d4433; //narrative text
+@bb-darkred: #7a0303; // level 1 page headers
+@bb-brown: #d9c4a7; // The brown used for aside boxes
+@bb-darkbeige: #e0d5be; //darker contrast (used for quest boxes)
+@bb-midbeige: #ede3c8; //Close analogue to page background colour
+@bb-lightbeige: #f5efe0;
+// trait colours
+@trait-border: #d8c483; //Borders
+@trait-default: #649364; //Default background
+@trait-rarity: #662288; //Rarity
+@trait-alignment: #446699; //Alignment
+@trait-size: #004416; //Size
+
+// Common Colours
+// Box Colour Schemes 
+@transparency: rgba(0, 0, 0, 0);
+// Encounters are red
+@encounter-head: #b14343;
+@encounter-border: #b93733;
+@encounter-aside: #b14343;
+@encounter-back: rgba(130, 80, 80, 0.1);
+// Treasure is blue
+@treasure-head: #48438b;
+@treasure-border: #655fa7;
+@treasure-aside: #48438b;
+@treasure-back: rgba(60, 60, 140, 0.1);
+// Milestones are orange
+@milestone-head: rgb(181, 68, 42);
+@milestone-border: #4F4F4F; // Never used
+@milestone-aside: white; // Never used
+@milestone-back: rgba(160, 99, 50, 0.1);
+
+@font-face {
+  font-family: "Kanit";
+  src: url(fonts/kanit.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url(fonts/roboto-condensed.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Skranji Regular";
+  src: url(fonts/skranji-regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Skranji Bold";
+  src: url(fonts/skranji-bold.ttf) format("truetype");
+}

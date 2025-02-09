@@ -1,0 +1,432 @@
+// ============================================== //
+//       COMMON RULES TO ALL PTR2e ADVENTURES     //
+// ============================================== //
+
+// ================== //
+// Default Text Rules //
+// ================== //
+@{journalcontent},
+@{adventureimporter} {
+  header {
+    margin-top: 12px;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: unset;
+    }
+  }
+
+  h1 {
+    font-family: @h1-font-family;
+    color: @header-color-1;
+    font-size: @h1-font-size;
+    border: unset;
+    line-height: 22px;
+    margin: 14px 0 10px 0;
+  }
+
+  h2 {
+    font-family: @h2-font-family;
+    color: @header-color-1;
+    font-size: @h2-font-size;
+    border: unset;
+    margin: 10px 0 8px 0;
+  }
+
+  h3,
+  h4 {
+    font-family: @h3-font-family;
+    font-size: @h3-font-size;
+    border: unset;
+    margin: 12px 0 0 0;
+  }
+
+  h3 {
+    color: @header-color-1;
+  }
+
+  h4 {
+    color: @header-color-2;
+
+    &.sub {
+      color: @header-color-1;
+      line-height: 2rem;
+      font-size: 1.5rem;
+      text-align: right;
+      position: absolute;
+      right: 0.75rem;
+      top: 0rem;
+      margin: unset;
+    }
+  }
+
+  // Regular text
+  p,
+  li {
+    font-family: @p-font-family;
+    font-size: @p-font-size;
+    // text-align: justify;
+    line-height: @p-line-height;
+  }
+
+  // Lists
+  ul {
+    list-style-type: none;
+  }
+
+  // Document links & Inline Check Buttons
+  @{documentlinks} {
+    background: none;
+    border: none;
+    line-height: 1rem;
+    outline: none;
+    border-radius: 5px;
+    color: @inline-link-button;
+    padding: 0 2px 0 0;
+
+    // Recolour the hover glow bb-green instead of core's orange
+    &:hover {
+      text-shadow: 0 0 10px @inline-link-button-highlight;
+    }
+
+    i {
+      margin-right: 2px;
+
+      &::before {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  // Hide the icons but only in text. Possibly controversial but I think it improves edge case text a lot and makes it far more readable.
+  p {
+    @{documentlinks} {
+      text-decoration: underline;
+
+      &>i:first-child {
+        display: none;
+      }
+
+      &>i.fa-dice-d4:first-child,
+      &>i.fa-dice-d6:first-child,
+      &>i.fa-dice-d8:first-child,
+      &>i.fa-dice-d10:first-child,
+      &>i.fa-dice-d12:first-child,
+      &>i.fa-dice-d20:first-child {
+        display: initial;
+      }
+
+      i:first-child,
+      i::before {
+        text-decoration: initial;
+      }
+    }
+  }
+}
+
+// ================== //
+//       IMAGES       //
+// ================== //
+@{journalcontent},
+@{adventureimporter} {
+  figure {
+    margin: unset;
+
+    &.round img {
+      border-radius: 50%
+    }
+
+    &.balance img {
+      margin: auto;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+
+    figcaption {
+      font-size: @p-font-size;
+      font-family: @h3-font-family;
+    }
+
+    &.head {
+      margin: 1rem 0;
+
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    &.right,
+    &.left {
+      padding: 0;
+    }
+  }
+
+  img {
+    border: unset;
+
+    &.flip {
+      transform: scaleX(-1);
+    }
+
+    &.scale150 {
+      min-width: 150%;
+      margin: -25%;
+      clip-path: circle(55%);
+      -webkit-mask-image: radial-gradient(black 55%, transparent 67.5%);
+      mask-image: radial-gradient(black 55%, transparent 67.5%);
+    }
+
+    &.scale200 {
+      min-width: 200%;
+      margin: -50%;
+      clip-path: circle(40%);
+      -webkit-mask-image: radial-gradient(black 40%, transparent 50%);
+      mask-image: radial-gradient(black 40%, transparent 50%);
+    }
+  }
+}
+
+// =================== //
+//    BOX TEMPLATES    //
+// =================== //
+@{journalcontent} {
+
+  // ==== MIXINS: PARTIALS ==== //
+  .headertypemixin(@type) {
+    border: unset;
+    margin: 0;
+    line-height: 26px;
+    border-bottom: 2px solid~"@{@{type}-border}";
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    @{documentlinks} {
+      color:~"@{@{type}-head}";
+    }
+
+    h3,
+    p {
+      font-family: @h3-font-family;
+      font-weight: @h3-font-weight;
+      font-size: 22px;
+      margin: unset;
+    }
+
+    h2 i {
+      font-size: 1.25rem;
+      vertical-align: middle;
+    }
+  }
+
+  .asidetypemixin(@type) {
+    background:~"@{@{type}-aside}";
+    border: unset;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px inset #00000080; //Not completely sure of this yet but it does have a subtle effect
+    display: flex;
+    flex-flow: column;
+    max-width: max-content;
+    min-width: max-content;
+
+    // Shift all text to white for the coloured background
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    @{documentlinks} {
+      text-shadow: unset;
+      color: white;
+
+      &::before,
+      &::after {
+        color: white;
+      }
+    }
+
+    @{documentlinks} {
+      &:hover {
+        text-shadow: 0 0 2px white;
+      }
+    }
+
+    h3 {
+      margin: 0;
+
+      a.content-link i {
+        display: none;
+      }
+    }
+
+    &>p {
+      margin: 0.2rem 0;
+
+      i.fas {
+        float: left;
+
+        &.fa-comment-alt {
+          float: right;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    ul {
+      margin: auto;
+      padding: 0;
+
+      li {
+        margin: 4px 0
+      }
+    }
+
+    // Images
+    img {
+      max-width: 150px;
+    }
+
+    &.wide img {
+      max-width: 200px;
+    }
+
+    &.thin img {
+      max-width: 128px;
+    }
+
+    // Rounds the top border
+    &.token {
+      border-radius: 100px 100px 5px 5px;
+
+      &.wide {
+        border-radius: 110px 110px 5px 5px;
+      }
+
+      &.thin {
+        border-radius: 90px 90px 5px 5px;
+      }
+    }
+
+    // Rounds the entire thing, removes border image
+    &.porthole {
+      border-radius: 100%;
+      border: none;
+    }
+
+    // Clips everything outside the token ring
+    &.clip {
+      clip-path: circle(35%);
+    }
+  }
+
+  // ==== MIXINS: FULL ==== //
+  .sectiontypemixin(@type) {
+    header {
+      .headertypemixin(@type);
+    }
+
+    aside {
+      .asidetypemixin(@type);
+    }
+
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+
+    // Sets links and bold text to use themed colour
+    strong,
+    ul.outcomes strong,
+    h1,
+    h2,
+    h3,
+    @{documentlinks} {
+      color:~"@{@{type}-head}";
+
+      &::before,
+      &::after {
+        color:~"@{@{type}-head}";
+      }
+    }
+
+    @{documentlinks} {
+      &:hover {
+        text-shadow: 0 0 10px~"@{@{type}-aside}";
+      }
+    }
+
+    // Styled dividers
+    hr {
+      border-bottom: 1px~"@{@{type}-border}" solid;
+    }
+
+    // Add background colour to all text. Applies automatically if the section only contains one paragraph, or can be forced with a "mini" class.
+    &>p:only-child,
+    &>article:only-child,
+    &.mini {
+      background-image: linear-gradient(to right, @transparency 0%, ~"@{@{type}-back}" 5%, ~"@{@{type}-back}" 95%, @transparency 100%);
+      border-top: 1px solid~"@{@{type}-border}";
+      border-bottom: 1px solid~"@{@{type}-border}";
+    }
+
+    &>p:only-child {
+      padding: 0.5rem 0;
+    }
+
+    // Gives us a way to re-add the background colour selectively
+    &>article,
+    &.background>p {
+      padding-top: 1px;
+      background-image: linear-gradient(to right, @transparency 0%, ~"@{@{type}-back}" 5%, ~"@{@{type}-back}" 95%, @transparency 100%);
+      border-bottom: 1px solid~"@{@{type}-border}";
+    }
+
+    header+ul.traits {
+      margin-top: 0.25rem;
+    }
+  }
+
+  // ==== TYPE-SPECIFIC RULES ==== //      
+  section.encounter {
+    .sectiontypemixin(encounter);
+
+    header {
+      text-transform: uppercase;
+    }
+  }
+
+  header.encounter {
+    .headertypemixin(encounter);
+    text-transform: uppercase;
+  }
+
+  aside.encounter,
+  section.encounter aside {
+    .asidetypemixin(encounter);
+  }
+
+  section.treasure {
+    .sectiontypemixin(treasure);
+
+    aside {
+      border-top: 1.2rem solid white;
+      margin-top: 3px;
+    }
+  }
+
+  section.milestone {
+    .sectiontypemixin(milestone);
+
+    &.head>p {
+      border-top: 0.75rem solid white;
+      border-bottom: 0.75rem solid white;
+      padding: 0.75rem;
+      width: fit-content;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

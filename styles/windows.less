@@ -1,0 +1,434 @@
+//   ===================  //
+//     SIZE AND LAYOUT    //
+//   ===================  //
+
+div.journal-sheet@{module-class}.window-app {
+
+  border-radius: 20px;
+  background: var(--appv2-background);
+
+  // ==== App V2 mimic styling === //
+  .window-header {
+    --button-size: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: 0 0 var(--header-height);
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    gap: 0.25rem;
+    z-index: 1;
+    cursor: grab;
+    background: var(--color-header-background);
+    font-size: var(--font-size-13);
+    color: var(--color-light-1);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 20px 20px 0 0;
+  }
+
+
+  // ====    Journal     ==== //
+  &.journal-entry {
+    min-width: 60rem;
+
+    // ====    Journal Header    ==== //
+    .journal-header {
+      // background-image: url(assets/sheet/head-back.webp);
+      // background-position: top center;
+      text-align: center;
+      height: 60px;
+      width: 100%;
+      margin: auto;
+      z-index: 2;
+      align-content: center;
+
+      input.title {
+        height: auto;
+        width: 480px;
+        border: none;
+        font-family: @h1-font-family;
+        color: @bb-darkgreen;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  // ====    Page    ==== //
+  &.journal-entry-page {
+    .editable {
+      header {
+        margin: unset;
+        padding: 1rem;
+        background: @bb-darkbeige;
+      }
+
+      .journal-page-content.editor-content {
+
+        // Make images less obnoxious to scroll past
+        figure.head img {
+          max-width: 700px;
+        }
+  
+        figure img {
+          max-width: 300px;
+        }
+  
+        aside img {
+          max-width: 128px;
+        }
+      }
+    }
+  }
+
+  // ====    Page & Journal    ==== //
+  &.journal-entry-page,
+  section.journal-entry-content {
+    min-width: 44rem;
+    border: unset;
+    z-index: 0;
+
+    // ====    Size & Layout    ==== //    
+    .journal-entry-pages {
+      margin: 0;
+    }
+
+    div.editable {
+      margin: unset; // Removes margin from bottom of page and right of scrollbar
+
+      div.scrollable {
+        padding-top: 0.5rem;
+        scrollbar-gutter: stable both-edges;
+
+        div.edit-container {
+          z-index: 5;
+        }
+      }
+    }
+
+    // ====    Single-page Header    ==== //
+    .journal-header {
+      z-index: 1;
+
+      border-bottom: 2px solid var(--border-theme-color);
+      border-radius: 8px 0 8px 8px;
+      // box-shadow: 0px 3px 5px 0px @bb-darkgreen;
+      background: @bb-brown;
+
+      input {
+        font-family: @h1-font-family;
+        color: @bb-darkgreen;
+        text-overflow: ellipsis;
+        border: none;
+      }
+
+      aside {
+        div.heading-level {
+          font-family: @h2-font-family;
+        }
+
+        div.show-title {
+          font-family: @p-font-family;
+        }
+      }
+    }
+
+    // ====    Page Titles    ==== //    
+    .journal-page-header {
+      position: relative;
+      margin: auto;
+      border: 1px solid var(--border-theme-color);
+      border-radius: 20px;
+      background: @bb-darkbeige;
+
+      h1,
+      h2,
+      h3 {
+        width: 100%;
+        margin: unset;
+        clear: both;
+      }
+
+      h1 {
+        color: @bb-darkgreen;
+        text-align: center;
+        border: unset;
+        margin: 0.5rem 0 0.5rem 0;
+        line-height: 2.5rem;
+        font-size: 2rem;
+        font-family: @h1-bold-font-family;
+        letter-spacing: 0.075rem;
+      }
+
+      h2,
+      h3 {
+        margin: 0.5rem 1rem 0.5rem 1rem;
+        width: auto;
+        font-family: @h3-font-family;
+        font-weight: @h3-font-weight;
+        // text-transform: uppercase;
+        line-height: 1.6rem;
+        font-size: 1.6rem;
+        color: @bb-darkgreen;
+        border-bottom: 2px solid @bb-darkgreen;
+        border: unset;
+      }
+
+      h3 {
+        color: @bb-lightgreen;
+        // border-bottom: 2px solid @bb-lightgreen;
+        font-family: @h3-page-font-family;
+      }
+    }
+  }
+
+  &.journal-entry-page form,
+  section.journal-entry-content {
+    background: @bb-midbeige;
+  }
+
+  // ====    Background    ==== //    
+  // &.journal-entry-page section.window-content::before,
+  // &.journal-sheet section.journal-entry-content::before {
+  //   content: "";
+  //   background-image: url(assets/sheet/page.webp);
+  //   width: 100%;
+  //   height: 100%;
+  //   width: -moz-available;
+  //   height: -moz-available;
+  //   width: -webkit-fill-available;
+  //   height: -webkit-fill-available;
+  //   position: absolute;
+  // }
+
+  // ====    Table of Contents    ==== //
+  &.journal-entry aside.sidebar.flexcol.directory.journal-sidebar {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    color: var(--appv2-text-color);
+    border: unset;
+
+    // ====    Buttons    ==== //
+    div.action-buttons,
+    header.directory-header {
+      z-index: 2; // Place them above the images
+
+      button.next,
+      button.previous,
+      a.action-button,
+      input,
+      button.create {
+        margin: 0.25rem;
+        border: unset;
+        background: rgba(255, 255, 245, 0.75);
+        border-radius: 4px;
+        line-height: 28px;
+        height: 28px;
+        color: black;
+      }
+    }
+
+    // ====    Directory    ==== //
+    ol.directory-list {
+      // padding: 2rem 0 1rem 0;
+
+      // ====    List Items    ==== //
+      li.directory-item {
+        line-height: 30px;
+        border: unset;
+
+        // ====    Page titles    ==== //
+        span.page-title {
+          text-overflow: ellipsis;
+          font-size: 0.9rem;
+        }
+
+        // ====    Page visibility    ==== //
+        span.page-ownership {
+          width: 24px;
+
+          &.observer {
+            color: #939393
+          }
+
+          &.none {
+            color: #7070CC
+          }
+        }
+
+        // ====    Page subheadings    ==== //
+        ol.headings {
+          display: none
+        }
+
+        // ====    Per-level rules    ==== //
+        &.level1 span.page-title {
+          font-family: @h3-font-family;
+          font-size: 1.1rem;
+          font-weight: @h3-font-weight;
+        }
+
+        &.level2 span.page-title {
+          text-indent: 0rem;
+          font-family: @p-font-family;
+        }
+
+        &.level3 span.page-title {
+          text-indent: 0.5rem;
+          font-family: @p-font-family;
+        }
+      }
+    }
+
+    // ====    Expanded List    ==== //
+    &:not(.collapsed) {
+      flex-basis: 16rem;
+
+      // Hide page numbers
+      span.page-number {
+        color: transparent;
+        width: 24px;
+      }
+
+      // ====    Active Page Pointer    ==== //
+      // .active {
+      //   span.page-number {
+      //     background-image: url(assets/toc-pointer.webp);
+      //     background-size: contain;
+      //     background-position: center;
+      //     background-repeat: no-repeat;
+      //   }
+      // }
+
+      .active+.active {
+        span.page-number {
+          background-image: unset;
+        }
+      }
+    }
+
+    &.collapsed {
+      padding: 0;
+      flex-basis: 2.5rem;
+    }
+  }
+
+  .directory .directory-item:is(.context, .active)::after {
+    border-color: @bb-lightgreen;
+  }
+}
+
+//   =============  //
+//   WINDOW NAVBAR  //
+//   =============  //
+div.journal-sheet@{module-class}.window-app:not(.minimized) {
+  header.window-header {
+    // background-image: url(assets/sheet/window-header.webp);
+    // background-size: contain;
+    // background-repeat: repeat-x;
+    // background-position: bottom left;
+    // padding-bottom: 2px;
+    // line-height: 2rem;
+    // z-index: 3;
+    border: unset;
+    // filter: drop-shadow(1px 1px 4px rgb(21, 12, 12));
+
+    // h4,
+    // a {
+    //   text-shadow: 1px 2px 3px black;
+    // }
+  }
+}
+
+//  ============  //
+//  JOURNAL ONLY  //
+//  ============  //
+div.journal-sheet@{module-class}.window-app.journal-entry {
+  section.window-content {
+    border: unset;
+    border-radius: unset;
+    position: relative;
+
+    // &::after {
+    //   content: "";
+    //   pointer-events: none;
+    //   background-image: url(assets/sheet/head-left.webp), url(assets/sheet/head-right.webp), url(assets/sheet/toc-bot.webp);
+    //   background-repeat: no-repeat, no-repeat, no-repeat;
+    //   background-size: 378px, 80px, 256px 75px;
+    //   background-position: top left, top right, bottom left;
+    //   z-index: 1;
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    // }
+  }
+}
+
+//  ============  //
+//  IMPORT ONLY   //
+//  ============  //
+div.adventure-importer@{module-class}.window-app {
+  border-radius: 20px;
+  background: var(--appv2-background);
+
+  // ==== App V2 mimic styling === //
+  .window-header {
+    --button-size: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex: 0 0 var(--header-height);
+    position: relative;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    gap: 0.25rem;
+    z-index: 1;
+    cursor: grab;
+    background: var(--color-header-background);
+    font-size: var(--font-size-13);
+    color: var(--color-light-1);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 20px 20px 0 0;
+  }
+
+  .window-content {
+    padding: 0;
+    background: @bb-midbeige;
+
+    form {
+      header {
+        margin-top: unset;
+      }
+
+      figure.adventure-banner {
+        position: relative;
+
+        figcaption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin-inline: auto;
+          width: fit-content;
+          top: 50%;
+          transform: translateY(-75%);
+          margin-top: unset;
+          font-size: 2rem;
+          color: #509c5c;
+          font-family: "Skranji Bold", sans-serif;
+          background: url(/ui/denim075.png) repeat;
+          border-radius: 20px;
+        }
+      }
+
+      section.adventure-overview,
+      section.adventure-contents {
+        padding: 1rem;
+        padding-top: unset;
+      }
+
+      footer.adventure-footer {
+        display: flex;
+      }
+    }
+  }
+}
