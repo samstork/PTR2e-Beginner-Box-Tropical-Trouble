@@ -1,7 +1,7 @@
 {
   "id": "ptr2e-beginner-box",
   "title": "PTR2e Beginner Adventure (PMD) - Tropical Trouble",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "compatibility": {
     "minimum": "12",
     "verified": "12",
@@ -49,6 +49,18 @@
       "url": "https://2e.ptr.wiki",
       "discord": "asheeon",
       "flags": {}
+    },
+    {
+      "name": "TitaniumDragoonNeo",
+      "url": "https://2e.ptr.wiki",
+      "discord": "titaniumdragoonneo",
+      "flags": {}
+    },
+    {
+      "name": "bem te vi",
+      "url": "https://2e.ptr.wiki",
+      "discord": "bem.te.vi",
+      "flags": {}
     }
   ],
   "packs": [
@@ -64,17 +76,6 @@
       }
     },
     {
-      "name": "ptr2e-beginner-box-items",
-      "label": "PTR2e Beginner Box Items",
-      "path": "packs/ptr2e-beginner-box-items",
-      "type": "Item",
-      "system": "ptr2e",
-      "ownership": {
-        "PLAYER": "LIMITED",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
       "name": "ptr2e-beginner-box-actors",
       "label": "PTR2e Beginner Box Actors",
       "path": "packs/ptr2e-beginner-box-actors",
@@ -84,17 +85,17 @@
         "PLAYER": "LIMITED",
         "ASSISTANT": "OWNER"
       }
-    },
+    }
+  ],
+  "packFolders": [
     {
-      "name": "ptr2e-beginner-box-tables",
-      "label": "PTR2e Beginner Box Tables",
-      "path": "packs/ptr2e-beginner-box-tables",
-      "type": "RollTable",
-      "system": "ptr2e",
-      "ownership": {
-        "PLAYER": "LIMITED",
-        "ASSISTANT": "OWNER"
-      }
+      "name": "Tropical Trouble",
+      "sorting": "m",
+      "color": "#2a8239",
+      "packs": [
+        "ptr2e-beginner-box",
+        "ptr2e-beginner-box-actors"
+      ]
     }
   ],
   "flags": {
