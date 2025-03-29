@@ -104,7 +104,7 @@ div.adventure-importer.window-app.ptr-bb .window-content .content-link > i {
   line-height: 1rem;
   outline: none;
   border-radius: 5px;
-  color: #2a8239;
+  color: #509c5c;
   padding: 0 2px 0 0;
 }
 div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost:hover,
@@ -121,7 +121,7 @@ div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost > i:hover
 div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i:hover,
 div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i:hover,
 div.adventure-importer.window-app.ptr-bb .window-content .content-link > i:hover {
-  text-shadow: 0 0 10px #509c5c;
+  text-shadow: 0 0 10px #2a8239;
 }
 div.journal-sheet.window-app.ptr-bb .journal-page-content .with-repost i,
 div.adventure-importer.window-app.ptr-bb .window-content .with-repost i,
@@ -154,6 +154,7 @@ div.adventure-importer.window-app.ptr-bb .window-content .with-repost > i i::bef
 div.journal-sheet.window-app.ptr-bb .journal-page-content .content-link > i i::before,
 div.adventure-importer.window-app.ptr-bb .window-content .content-link > i i::before {
   margin-left: 2px;
+  color: white;
 }
 div.journal-sheet.window-app.ptr-bb .journal-page-content p .with-repost,
 div.adventure-importer.window-app.ptr-bb .window-content p .with-repost,
